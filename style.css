@@ -1,0 +1,985 @@
+/* =========================================================
+   ANA PANEL
+========================================================= */
+
+#gon-birlesik-namaz {
+
+    width:100%;
+    max-width:1400px;
+
+    margin:30px auto;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
+    border:1px solid #d7c58a;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8f5e9 0%,
+            #ffffff 55%,
+            #eef6ef 100%
+        );
+
+    box-shadow:
+        0 14px 40px
+        rgba(24,72,48,.17);
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color:#294d41;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#gon-birlesik-namaz .gon-main-header {
+
+    position:relative;
+
+    padding:32px 20px 27px;
+
+    text-align:center;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123f2c,
+            #1d6848
+        );
+
+    border-bottom:
+        4px solid #c9a646;
+
+    overflow:hidden;
+
+}
+
+
+#gon-birlesik-namaz .gon-main-header:before {
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    left:-120px;
+    top:-150px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(234,213,155,.15);
+
+}
+
+
+#gon-birlesik-namaz .gon-main-header:after {
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    right:-180px;
+    top:-190px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(234,213,155,.12);
+
+}
+
+
+#gon-birlesik-namaz .gon-hilal {
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:46px;
+
+    line-height:1;
+
+    color:#ead9a5;
+
+    margin-bottom:9px;
+
+}
+
+
+#gon-birlesik-namaz .gon-main-header h1 {
+
+    position:relative;
+
+    z-index:2;
+
+    margin:0;
+
+    color:#fff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+
+#gon-birlesik-namaz .gon-gold-line {
+
+    position:relative;
+
+    z-index:2;
+
+    width:95px;
+
+    height:3px;
+
+    margin:14px auto 11px;
+
+    border-radius:20px;
+
+    background:#c9a23a;
+
+}
+
+
+#gon-birlesik-namaz .gon-location {
+
+    position:relative;
+
+    z-index:2;
+
+    color:#ead9a5;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1.7px;
+
+}
+
+
+#gon-birlesik-namaz .gon-mosque {
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:14px;
+
+    font-size:32px;
+
+}
+
+
+#gon-birlesik-namaz .gon-star {
+
+    position:absolute;
+
+    top:20px;
+
+    z-index:3;
+
+    color:#d9c47e;
+
+    font-size:28px;
+
+    opacity:.38;
+
+}
+
+
+#gon-birlesik-namaz .gon-star-left {
+    left:30px;
+}
+
+
+#gon-birlesik-namaz .gon-star-right {
+    right:30px;
+}
+
+
+/* =========================================================
+   SEÇİM ALANI
+========================================================= */
+
+#gon-birlesik-namaz .gon-location-area {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:22px;
+
+    padding:25px;
+
+    background:#f5efdc;
+
+    border-bottom:
+        1px solid #dfd1a8;
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box {
+
+    width:320px;
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box label {
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#174d34;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box select {
+
+    width:100%;
+
+    height:50px;
+
+    padding:
+        0 15px;
+
+    box-sizing:border-box;
+
+    border:
+        1px solid #d1bd7c;
+
+    border-radius:11px;
+
+    background:#fffdf7;
+
+    color:#173f32;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.2s ease;
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box select:hover {
+
+    border-color:#b89437;
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box select:focus {
+
+    border-color:#0b4d3b;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(11,77,59,.10);
+
+}
+
+
+#gon-birlesik-namaz .gon-select-box select:disabled {
+
+    background:#efede5;
+
+    color:#999;
+
+    cursor:not-allowed;
+
+}
+
+
+/* =========================================================
+   DURUM
+========================================================= */
+
+#gon-birlesik-namaz #gon-main-status {
+
+    padding:
+        11px 15px;
+
+    text-align:center;
+
+    background:#fffaf0;
+
+    border-bottom:
+        1px solid #eadfbe;
+
+    color:#806b35;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* =========================================================
+   BÖLÜM BAŞLIĞI
+========================================================= */
+
+#gon-birlesik-namaz .gon-section-title {
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    color:#174d34;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+#gon-birlesik-namaz .gon-section-title span {
+
+    margin-right:7px;
+
+    color:#b28b2c;
+
+}
+
+
+/* =========================================================
+   SONRAKİ NAMAZ
+========================================================= */
+
+#gon-birlesik-namaz .gon-next-section {
+
+    padding:
+        30px 20px 34px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf7,
+            #f8f5e9
+        );
+
+    border-bottom:
+        1px solid #e5d9b9;
+
+}
+
+
+#gon-birlesik-namaz #gon-date {
+
+    margin-bottom:15px;
+
+    color:#55705f;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+
+#gon-birlesik-namaz .gon-next-label {
+
+    margin-bottom:8px;
+
+    color:#8b8060;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.7px;
+
+}
+
+
+#gon-birlesik-namaz #gon-next-prayer {
+
+    display:inline-block;
+
+    min-width:130px;
+
+    padding:
+        7px 25px;
+
+    margin-bottom:12px;
+
+    border:
+        1px solid #d4e5d7;
+
+    border-radius:30px;
+
+    background:#eef6ef;
+
+    color:#174d34;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+
+#gon-birlesik-namaz .gon-next-time {
+
+    margin-bottom:12px;
+
+    color:#55705f;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+#gon-birlesik-namaz .gon-count-title {
+
+    margin-bottom:5px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+#gon-birlesik-namaz #gon-countdown {
+
+    color:#b28b2c;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    letter-spacing:4px;
+
+}
+
+
+/* =========================================================
+   BUGÜNÜN VAKİTLERİ
+========================================================= */
+
+#gon-birlesik-namaz .gon-today-section {
+
+    padding:
+        28px 25px 30px;
+
+    background:#faf7ed;
+
+    border-bottom:
+        1px solid #e5d9b9;
+
+}
+
+
+#gon-birlesik-namaz .gon-today-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap:12px;
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-card {
+
+    position:relative;
+
+    padding:
+        18px 10px 17px;
+
+    text-align:center;
+
+    border:
+        1px solid #e2d6b6;
+
+    border-radius:12px;
+
+    background:#fffdf7;
+
+    box-shadow:
+        0 3px 10px
+        rgba(24,72,48,.05);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease,
+        background .2s ease;
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-card:hover {
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 7px 16px
+        rgba(24,72,48,.10);
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-icon {
+
+    margin-bottom:7px;
+
+    font-size:22px;
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-name {
+
+    margin-bottom:7px;
+
+    color:#55705f;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-card strong {
+
+    color:#174d34;
+
+    font-size:21px;
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-card:last-child strong {
+
+    color:#b28b2c;
+
+}
+
+
+/* =========================================================
+   AKTİF VAKİT
+========================================================= */
+
+#gon-birlesik-namaz .gon-vakit-card.gon-active {
+
+    background:
+        linear-gradient(
+            145deg,
+            #eef6ef,
+            #f8f5e9
+        );
+
+    border-color:#b99b48;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(185,155,72,.12),
+        0 7px 18px
+        rgba(24,72,48,.10);
+
+}
+
+
+#gon-birlesik-namaz .gon-vakit-card.gon-active:after {
+
+    content:"ŞİMDİ";
+
+    position:absolute;
+
+    top:7px;
+
+    right:8px;
+
+    padding:
+        2px 6px;
+
+    border-radius:10px;
+
+    background:#174d34;
+
+    color:#fff;
+
+    font-size:8px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+
+/* =========================================================
+   HAFTALIK BÖLÜM
+========================================================= */
+
+#gon-birlesik-namaz .gon-week-section {
+
+    padding:
+        30px 25px 32px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8f5e9,
+            #ffffff
+        );
+
+}
+
+
+#gon-birlesik-namaz .gon-table-wrapper {
+
+    width:100%;
+
+    overflow-x:auto;
+
+    border:
+        1px solid #ded2b1;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(24,72,48,.05);
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table {
+
+    width:100%;
+
+    min-width:980px;
+
+    border-collapse:collapse;
+
+    background:#fffdf7;
+
+    font-size:14px;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table th {
+
+    padding:
+        15px 12px;
+
+    text-align:left;
+
+    white-space:nowrap;
+
+    background:#123f2c;
+
+    color:#fff;
+
+    font-weight:700;
+
+    border-bottom:
+        3px solid #c9a23a;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table td {
+
+    padding:
+        14px 12px;
+
+    white-space:nowrap;
+
+    border-bottom:
+        1px solid #e5d9b9;
+
+    color:#294d41;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table td:nth-child(n+3) {
+
+    color:#174d34;
+
+    font-weight:600;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table td:last-child {
+
+    color:#a57c18;
+
+    font-weight:700;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table tbody tr:nth-child(odd) {
+
+    background:#faf7ed;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table tbody tr:hover {
+
+    background:#f0e8ce;
+
+}
+
+
+#gon-birlesik-namaz .gon-week-table tbody tr.gon-today-row {
+
+    background:#eef6ef;
+
+    box-shadow:
+        inset 4px 0 0 #b28b2c;
+
+}
+
+
+#gon-birlesik-namaz .gon-loading {
+
+    padding:
+        45px !important;
+
+    text-align:center !important;
+
+    color:#174d34 !important;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+#gon-birlesik-namaz .gon-main-footer {
+
+    padding:
+        14px;
+
+    text-align:center;
+
+    background:#123f2c;
+
+    color:#d9c47e;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    border-top:
+        3px solid #c9a646;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1000px) {
+
+    #gon-birlesik-namaz .gon-today-grid {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBİL
+========================================================= */
+
+@media(max-width:700px) {
+
+    #gon-birlesik-namaz {
+
+        margin:
+            15px auto;
+
+        border-radius:15px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-main-header {
+
+        padding:
+            25px 15px 22px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-main-header h1 {
+
+        font-size:26px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-hilal {
+
+        font-size:38px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-star {
+
+        font-size:21px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-star-left {
+
+        left:14px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-star-right {
+
+        right:14px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-location-area {
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:13px;
+
+        padding:
+            18px 15px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-select-box {
+
+        width:100%;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-next-section {
+
+        padding:
+            25px 15px 28px;
+
+    }
+
+
+    #gon-birlesik-namaz #gon-next-prayer {
+
+        font-size:27px;
+
+    }
+
+
+    #gon-birlesik-namaz #gon-countdown {
+
+        font-size:31px;
+
+        letter-spacing:2px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-today-section,
+    #gon-birlesik-namaz .gon-week-section {
+
+        padding:
+            24px 12px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-today-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:9px;
+
+    }
+
+
+    #gon-birlesik-namaz .gon-section-title {
+
+        font-size:19px;
+
+    }
+
+}

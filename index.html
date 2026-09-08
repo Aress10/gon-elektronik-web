@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Namaz Vakitleri</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div id="gon-birlesik-namaz">
+
+    <!-- =====================================================
+         ÜST BAŞLIK
+    ====================================================== -->
+
+    <div class="gon-main-header">
+
+        <span class="gon-star gon-star-left">✦</span>
+        <span class="gon-star gon-star-right">✦</span>
+
+        <div class="gon-hilal">☾</div>
+
+        <h1 id="gon-main-title">
+            Namaz Vakitleri
+        </h1>
+
+        <div class="gon-gold-line"></div>
+
+        <div class="gon-location">
+            <span id="gon-selected-il">KONYA</span>
+            <span> • </span>
+            <span id="gon-selected-ilce">KARATAY</span>
+        </div>
+
+        <div class="gon-mosque">
+            🕌
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         İL / İLÇE SEÇİMİ
+    ====================================================== -->
+
+    <div class="gon-location-area">
+
+        <div class="gon-select-box">
+
+            <label>
+                📍 İl Seçiniz
+            </label>
+
+            <select id="gon-main-il">
+
+                <option value="">
+                    İller yükleniyor...
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="gon-select-box">
+
+            <label>
+                🕌 İlçe Seçiniz
+            </label>
+
+            <select id="gon-main-ilce"
+                    disabled>
+
+                <option value="">
+                    Önce il seçiniz
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         DURUM
+    ====================================================== -->
+
+    <div id="gon-main-status">
+        Namaz vakitleri hazırlanıyor...
+    </div>
+
+
+    <!-- =====================================================
+         SONRAKİ NAMAZ
+    ====================================================== -->
+
+    <div class="gon-next-section">
+
+        <div class="gon-section-title">
+
+            <span>☾</span>
+
+            Sıradaki Namaz
+
+        </div>
+
+        <div id="gon-date">
+            --
+        </div>
+
+        <div class="gon-next-label">
+            SIRADAKİ VAKİT
+        </div>
+
+        <div id="gon-next-prayer">
+            --
+        </div>
+
+        <div class="gon-next-time">
+
+            <span id="gon-next-time-value">
+                --:--
+            </span>
+
+        </div>
+
+        <div class="gon-count-title">
+            Kalan Süre
+        </div>
+
+        <div id="gon-countdown">
+            00:00:00
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         BUGÜNÜN VAKİTLERİ
+    ====================================================== -->
+
+    <div class="gon-today-section">
+
+        <div class="gon-section-title">
+
+            <span>🕌</span>
+
+            Bugünün Namaz Vakitleri
+
+        </div>
+
+
+        <div class="gon-today-grid">
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="imsak">
+
+                <div class="gon-vakit-icon">
+                    🌙
+                </div>
+
+                <div class="gon-vakit-name">
+                    İmsak
+                </div>
+
+                <strong id="gon-imsak">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="gunes">
+
+                <div class="gon-vakit-icon">
+                    ☀️
+                </div>
+
+                <div class="gon-vakit-name">
+                    Güneş
+                </div>
+
+                <strong id="gon-gunes">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="ogle">
+
+                <div class="gon-vakit-icon">
+                    🕌
+                </div>
+
+                <div class="gon-vakit-name">
+                    Öğle
+                </div>
+
+                <strong id="gon-ogle">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="ikindi">
+
+                <div class="gon-vakit-icon">
+                    🌤️
+                </div>
+
+                <div class="gon-vakit-name">
+                    İkindi
+                </div>
+
+                <strong id="gon-ikindi">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="aksam">
+
+                <div class="gon-vakit-icon">
+                    🌇
+                </div>
+
+                <div class="gon-vakit-name">
+                    Akşam
+                </div>
+
+                <strong id="gon-aksam">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="gon-vakit-card"
+                 data-prayer="yatsi">
+
+                <div class="gon-vakit-icon">
+                    🌙
+                </div>
+
+                <div class="gon-vakit-name">
+                    Yatsı
+                </div>
+
+                <strong id="gon-yatsi">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HAFTALIK TABLO
+    ====================================================== -->
+
+    <div class="gon-week-section">
+
+        <div class="gon-section-title">
+
+            <span>📅</span>
+
+            Haftalık Namaz Vakitleri
+
+        </div>
+
+
+        <div class="gon-table-wrapper">
+
+            <table class="gon-week-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Miladi Tarih
+                        </th>
+
+                        <th>
+                            Hicri Tarih
+                        </th>
+
+                        <th>
+                            İmsak
+                        </th>
+
+                        <th>
+                            Güneş
+                        </th>
+
+                        <th>
+                            Öğle
+                        </th>
+
+                        <th>
+                            İkindi
+                        </th>
+
+                        <th>
+                            Akşam
+                        </th>
+
+                        <th>
+                            Yatsı
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="gon-week-table-body">
+
+                    <tr>
+
+                        <td colspan="8"
+                            class="gon-loading">
+
+                            🕌 Namaz vakitleri hazırlanıyor...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ALT BİLGİ
+    ====================================================== -->
+
+    <div class="gon-main-footer">
+
+        ✦ HUZUR • VAKİT • İBADET ✦
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
